@@ -12,8 +12,6 @@ function Todo(props) {
   function closeModalHandler(){
     setModalIsOpen(false);
   }
-
-
   return (
     <div className="card">
       <h2>{props.text}</h2>
