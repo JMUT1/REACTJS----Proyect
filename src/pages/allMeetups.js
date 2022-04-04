@@ -1,4 +1,4 @@
-import MeetupList from "../meetups/meetupList";
+import MeetupList from "../components/meetups/meetupList";
 const DUMMY_DATA = [
     {
       id: 'm1',
