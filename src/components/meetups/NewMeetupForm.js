@@ -25,7 +25,8 @@ function NewMeetupForm(props){
         props.onAddMeetup(meetupData);
     }
 
-    return <Card>
+    return (
+    <Card>
         <form className={classes.form} onSubmit={submitHandler} >
         <div className={classes.control}>
             <label htmlFor="title">Meetup Title</label>
@@ -47,11 +48,11 @@ function NewMeetupForm(props){
             <textarea id="description" required rows="5" ref={descriptionInputRef}></textarea>
         </div>
 
-        <div className={classes.action}>
+        <div className={classes.actions}>
             <button>Add Meetup</button>
         </div>
         </form>
-    </Card>
+    </Card>)
 }
 
 export default NewMeetupForm;
