@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
-import { FavoritesContextProvider } from "./store/favorite-context";
+import {FavoritesContextProvider} from "./store/favorite-context";
+
 
 ReactDOM.render(
   <FavoritesContextProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </FavoritesContextProvider>,
+    </FavoritesContextProvider>,
   document.getElementById("root")
 );
-import { FavoritesContextProvider } from "./store/favorite-context";
